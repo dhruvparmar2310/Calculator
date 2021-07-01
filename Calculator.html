@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<title></title>
+	<script src="my.js"></script>
+	<style type="text/css">
+		.table{
+			box-shadow:  10px 10px 10px #808080;
+			border: 5px;
+			border-radius: 5px;
+		}
+		.button{
+			background-color: red; 
+		}
+		.output{
+			font-size: 20px;
+			text-align: right;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		&nbsp;
+	</div>
+	<div class="container-fluid col-sm col-md col-lg" style="max-width: 170px;">
+		<div style="background-color: #777; width: 234px; padding: 5px; border-radius: 3px; color: white"><b>Casio Calculator</b></div>
+		<table align="center" class="table">
+			<tr style="background-color: #111">
+				<td colspan="4">
+					<div id="ans" class="output" style="height: 35px;">
+						
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" id="clear">
+					<input type="button" value="Clear" onclick="ce()" style="width: 83px;" class="btn btn-success">
+				</td>
+				<td><input type="button" onclick="de()" class="btn btn-info" value="Delete"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" class="btn btn-default" onclick="display(7)"></td>
+				<td><input type="button" value="8" class="btn btn-default" onclick="display(8)"></td>
+				<td><input type="button" value="9" class="btn btn-default" onclick="display(9)"></td>
+				<td><input type="button" value="/" class="btn btn-warning" onclick="op('/')" style="width: 55px;"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" class="btn btn-default" onclick="display(4)"></td>
+				<td><input type="button" value="5" class="btn btn-default" onclick="display(5)"></td>
+				<td><input type="button" value="6" class="btn btn-default" onclick="display(6)"></td>
+				<td><input type="button" value="x" class="btn btn-warning" onclick="op('x')" style="width: 55px;"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" class="btn btn-default" onclick="display(1)"></td>
+				<td><input type="button" value="2" class="btn btn-default" onclick="display(2)"></td>
+				<td><input type="button" value="3" class="btn btn-default" onclick="display(3)"></td>
+				<td><input type="button" value="-" class="btn btn-warning" onclick="op('-')" style="width: 55px;"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="." class="btn btn-default" onclick="dot()" style="width: 33px;"></td>
+				<td><input type="button" value="0" class="btn btn-default" onclick="display(0)"></td>
+				<td><input type="button" value="=" class="btn btn-primary" onclick="calc()"></td>
+				<td><input type="button" value="+" class="btn btn-warning" onclick="op('+')" style="width: 55px;"></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
